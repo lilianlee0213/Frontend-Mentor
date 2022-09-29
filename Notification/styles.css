@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+	--blue-color: #0a327b;
+	--red-color: #f65552;
+	--veryDarkGreyBlue-color: #1c202b;
+	--darkGreyBlue-color: #5e6778;
+	--greyBlue-color: #939cad;
+	--lightGreyBlue-color: #e5effa;
+	--veryLightGreyBlue-color: #dde7ee;
+	--snow-color: #f7fafd;
+	--white-color: #ffffff;
+}
+* {
+	margin: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	padding: 24px 16px;
+	background-color: var(--white-color);
+}
+
+/* typography */
+h1 {
+	font-size: 20px;
+	font-weight: 800;
+	line-height: 25px;
+	color: var(--veryDarkGreyBlue-color);
+}
+p,
+.update-time {
+	font-size: 14px;
+	line-height: 17.64px;
+	font-weight: 500;
+	color: var(--darkGreyBlue-color);
+}
+ul {
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+
+.notification-number {
+	font-size: 16px;
+	line-height: 20.16px;
+	font-weight: 800;
+	color: var(--white-color);
+}
+.username {
+	font-weight: 800;
+	color: var(--veryDarkGreyBlue-color);
+}
+
+.my-post {
+	font-weight: 700;
+	color: var(--darkGreyBlue-color);
+}
+
+.my-group {
+	font-weight: 700;
+	color: var(--blue-color);
+}
+
+.update-time {
+	color: var(--greyBlue-color);
+}
+/* header styles  */
+.header {
+	display: grid;
+	grid-template-columns: auto 1fr auto;
+	margin-bottom: 24px;
+}
+
+.notification {
+	margin-right: 9px;
+}
+
+.notification-alert {
+	width: 32px;
+	height: 25px;
+	padding: 1px;
+	text-align: center;
+	border-radius: 6px;
+	background-color: var(--blue-color);
+}
+
+.list {
+	display: flex;
+	width: 100%;
+	height: 89px;
+	padding: 16px;
+	margin-bottom: 10px;
+	border-radius: 8px;
+	background-color: var(--snow-color);
+}
+.content-wrapper {
+	margin-right: 20px;
+}
+.avatar-wrapper {
+	width: 39px;
+	height: 39px;
+	margin-right: 13px;
+}
+
+.avatar {
+	height: 100%;
+}
+.username,
+.my-post,
+.description,
+.my-group {
+	margin-right: 2px;
+}
+
+.my-image img {
+	display: inline-block;
+	width: 39px;
+}
+
+.dots {
+	content: '';
+	display: inline-block;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background-color: #f65552;
+}
+.read {
+	display: none;
+}
